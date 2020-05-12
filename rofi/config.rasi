@@ -1,0 +1,65 @@
+configuration {
+  drun-display-format: "{icon} {name}";
+  display-drun: "Apps";
+	show-icons: true;
+	icon-theme: "Arc";
+	location: 0;
+	yoffset: 0;
+  xoffset: 0;
+	fake-transparency: false;
+	hide-scrollbar: true;
+	bw: 0;
+  fullscreen: false;
+  show-icons: true;
+	terminal: "urxvt";
+	sidebar-mode: false;
+  font: "NeutraText 24";
+  combi-modi: "window,drun";
+  show:"combi";
+  modi:"combi";
+  lines: 10;
+}
+
+* {
+  background-color: #282C33;
+  border-color: #2e343f;
+  text-color: #8ca0aa;
+  spacing: 0;
+  width: 1024px;
+}
+
+inputbar {
+  border: 0 0 1px 0;
+  children: [prompt,entry];
+}
+
+prompt {
+  padding: 16px;
+  border: 0 1px 0 0;
+}
+
+textbox {
+  background-color: #2e343f;
+  border: 0 0 1px 0;
+  border-color: #282C33;
+  padding: 8px 16px;
+}
+
+entry {
+  padding: 16px;
+}
+
+listview {
+  cycle: false;
+  margin: 0 0 -1px 0;
+  scrollbar: false;
+}
+
+element {
+  border: 0 0 1px 0;
+  padding: 28px;
+}
+
+element selected {
+  background-color: #2e343f;
+}
